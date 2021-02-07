@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #14bdac;
+}
+
+.container {
+  position: relative;
+  height: 80vh;
+  width: 80vh;
+  background-color: black;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+  left: 50%;
+}
+
+.celda {
+  position: absolute;
+  height: 32.5%;
+  width: 32.5%;
+  background-color: #14bdac;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease;
+}
+
+.h-centro{
+  left: 33.75%;
+}
+
+.top{
+  top: -0.1%;
+}
+
+.left {
+  left: -0.1%;
+}
+
+.right {
+  right: -0.2%;
+}
+
+.v-centro {
+  top: 33.75%;
+}
+
+.bottom {
+  bottom: -0.2%;
+}
+
+.interior {
+  height: 97%;
+  width: 97%;
+  margin: 1.5%;
+  background-color: black;
+ 
+}
+
+#reiniciar {
+  position: absolute;
+  height: 10vh;
+  width: 10vh;
+  bottom: 1vh;
+  left: 1vh;
+  background-image: url("./reiniciar.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+#reiniciar:hover {
+  transform: rotate(360deg);
+  transition: all 0.5s linear;
+}
+
+
+
+#ganar {
+  position: absolute;
+  height: 20vh;
+  width: 99vw;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  background-color: #14bdac;
+  border: 1vh solid #f30067;
+  display: none;
+  font-size: 5em;
+  color: white;
+  line-height: 20vh;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.celda.hover {
+	background-image: url(cruz.png);
+}
+
+@media screen and (orientation: portrait){
+  .container {
+    height: 90vw;
+    width: 90vw;
+    top: 40%;
+  }
+  
+  #reiniciar {
+    position: relative;
+    bottom: -20vh;
+  }
+}
+
